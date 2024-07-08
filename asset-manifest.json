@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "//github.com/DonnaMagbag/DonnaMagbag.github.io/static/css/main.6f948227.css",
-    "main.js": "//github.com/DonnaMagbag/DonnaMagbag.github.io/static/js/main.3700b018.js",
-    "static/js/453.4c4f4ef7.chunk.js": "//github.com/DonnaMagbag/DonnaMagbag.github.io/static/js/453.4c4f4ef7.chunk.js",
-    "static/media/temporary-profile-pic.jpg": "//github.com/DonnaMagbag/DonnaMagbag.github.io/static/media/temporary-profile-pic.8625ab9b9f1266c43703.jpg",
-    "index.html": "//github.com/DonnaMagbag/DonnaMagbag.github.io/index.html",
-    "main.6f948227.css.map": "//github.com/DonnaMagbag/DonnaMagbag.github.io/static/css/main.6f948227.css.map",
-    "main.3700b018.js.map": "//github.com/DonnaMagbag/DonnaMagbag.github.io/static/js/main.3700b018.js.map",
-    "453.4c4f4ef7.chunk.js.map": "//github.com/DonnaMagbag/DonnaMagbag.github.io/static/js/453.4c4f4ef7.chunk.js.map"
+    "main.css": "/static/css/main.6f948227.css",
+    "main.js": "/static/js/main.3e87d9f7.js",
+    "static/js/453.4c4f4ef7.chunk.js": "/static/js/453.4c4f4ef7.chunk.js",
+    "static/media/temporary-profile-pic.jpg": "/static/media/temporary-profile-pic.8625ab9b9f1266c43703.jpg",
+    "index.html": "/index.html",
+    "main.6f948227.css.map": "/static/css/main.6f948227.css.map",
+    "main.3e87d9f7.js.map": "/static/js/main.3e87d9f7.js.map",
+    "453.4c4f4ef7.chunk.js.map": "/static/js/453.4c4f4ef7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f948227.css",
-    "static/js/main.3700b018.js"
+    "static/js/main.3e87d9f7.js"
   ]
 }
