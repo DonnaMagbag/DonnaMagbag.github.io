@@ -1,6 +1,6 @@
 import './styles/styles1.css';
 
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Redirect, Route, BrowserRouter as Router, Routes, Switch } from 'react-router-dom';
 
 import About from './components/About';
 import Contact from './components/Contact';
@@ -15,12 +15,19 @@ function App() {
     <div className="App">
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <main>
+      <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/index.html" render={(props) => {
+              const path = new URLSearchParams(props.location.search).get('path');
+              return <Redirect to={path || '/'} />;
+            }} />
+            <Route component={Home} />
+          </Switch>
+        </main>
       <Footer />
     </Router>
   </div>
