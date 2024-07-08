@@ -2,7 +2,7 @@
   "name": "donna-magbag-portfolio-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://https://github.com/DonnaMagbag/DonnaMagbag.github.io",
+  "homepage": "https://DonnaMagbag.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
