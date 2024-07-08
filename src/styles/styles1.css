@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1, h2 {
+    font-family: 'Courier Prime', monospace;
+  }
+  
+  /* Body styles */
+  body {
+    background: linear-gradient(135deg, #02040A, #0c2b58);
+    color: #CCDBDC;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0; /* Remove default margin */
+    padding-top: 60px; /* Add top padding equal to the height of the fixed header */
+    padding-bottom: 100px; /* Add bottom padding equal to the height of the fixed footer */
+  }
+  
+  /* Header styles */
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between; /* Align items to the edges */
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: #E09F7D;
+    border-right: none; /* Remove border-right */
+    backdrop-filter: blur(10px);
+    z-index: 1000; /* Ensure the header is above other content */
+  }
+
+  .logo {
+    margin-right: auto; /* Align logo to the left */
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #E09F7D;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Courier Prime', monospace;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row; /* Horizontal alignment */
+    justify-content: center; /* Center the navigation buttons */
+    align-items: center;
+    flex-grow: 1; /* Allow nav to take up remaining space */
+  }
+  
+  .nav ul {
+    display: flex;
+    flex-direction: row; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav li {
+    margin-left: 2rem; /* Add spacing between the nav buttons */
+  }
+  
+.nav a {
+    background: rgba(204, 219, 220, 0.2); /* Translucent background */
+    color: #CCDBDC;
+    border: 2px solid #2E5274;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4), -4px -4px 8px rgba(255, 255, 255, 0.2); /* 3D shadow effect */
+    transform: skew(-10deg); /* Skew effect for asymmetrical look */
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    background: rgba(204, 219, 220, 0.5); /* Less translucent on hover */
+    color: #E09F7D;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), -2px -2px 4px rgba(255, 255, 255, 0.2); /* Reduced shadow on hover */
+    transform: skew(-10deg) scale(1.05); /* Skew and slight scale on hover */
+    text-decoration: none;
+  }
+  
+  /* Home page styles */
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    text-align: center;
+    background: rgba(32, 32, 44, 0.8); /* Glassmorphism background */
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    color: #CCDBDC;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    animation: moveDiagonally 2s forwards;
+      }
+
+  @keyframes moveDiagonally {
+    to {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+  .card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #E09F7D;
+  }
+  
+  .card p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CCDBDC; /* Add color to the icons */
+}
+
+.social-icons a.github,
+.social-icons a.linkedin {
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+  
+  /* Neumorphism button styles */
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    color: #02040A;
+    background: #E09F7D;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px #051020, -7px -7px 15px #2E5274;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #CCDBDC;
+    box-shadow: 4px 4px 10px #051020, -4px -4px 10px #2E5274;
+  }
+
+
+  
+  /* About page styles */
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    background: rgba(32, 32, 44, 0.8); 
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    color: #CCDBDC;
+    text-align: left;
+}
+  
+  .about-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 15px #051020, -5px -5px 15px #2E5274;
+  }
+  
+  .about-content h1, .about-content h2 {
+    color: #E09F7D;
+  }
+
+.about-content p, .about-content ul {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.about-content a {
+    color: #E09F7D;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.about-content a:hover {
+    color: #CCDBDC;
+}
+  
+  /* Projects page styles */
+  .projects {
+    padding: 2rem;
+  }
+  
+  .projects h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #E09F7D;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project {
+    background: rgba(32, 32, 44, 0.8); 
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    color: #CCDBDC;
+  }
+  
+  .project h2 {
+    margin-bottom: 0.5rem;
+    color: #E09F7D;
+  }
+  
+  .project p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project a {
+    color: #CCDBDC;
+    text-decoration: none;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact page styles */
+  .contact {
+    padding: 2rem;
+    border-radius: 20px;
+    background: #051020;
+    box-shadow: 10px 10px 20px #02040A, -10px -10px 20px #2E5274;
+  }
+  
+  .contact h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #E09F7D;
+     }
+
+  .contact p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #CCDBDC;
+  }
+
+  .contact a {
+    color: #E09F7D;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact a:hover {
+    color: #CCDBDC;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #2E5274;
+    border-radius: 20px;
+    font-size: 1rem;
+    background: #051020;
+    color: #CCDBDC;
+    box-shadow: inset 5px 5px 10px #02040A, inset -5px -5px 10px #2E5274;
+    outline: none;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #E09F7D;
+}
+  
+  .contact-form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 20px;
+    background: #E09F7D;
+    color: #02040A;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 7px 7px 15px #051020, -7px -7px 15px #2E5274;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  .contact-form button:hover {
+    background-color: #CCDBDC
+  }  
+
+/* Footer styles */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Set a fixed height for the footer */
+  padding: 1rem;
+  background: #051020;
+  color: #CCDBDC;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure the footer is above other content */
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #CCDBDC; /* Add color to the icons */
+  font-size: 1.5rem; /* Adjust size as needed */
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #E09F7D;
+}
+
+
+  /* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 0; /* Reset flex-grow */
+    }
+    .nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav li {
+      margin: 0.5rem 0;
+    }
+  }
