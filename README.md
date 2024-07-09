@@ -30,14 +30,18 @@ Installation
 To run this project locally, follow these steps:
 
 1. Clone the repository:
+
    git clone https://github.com/DonnaMagbag/DonnaMagbag.github.io.git
+   
    cd donnamagbag.github.io
 
 
-2. Install dependencies:
+3. Install dependencies:
+
    npm install
 
-3. Start the development server:
+5. Start the development server:
+
    npm start
 
 The app will be available at http://localhost:3000.
@@ -57,23 +61,41 @@ Technologies Used
 Project Structure
 
 donnamagbag.github.io/
+
 ├── public/
+
 │   ├── index.html
+
 │   └── ...
+
 ├── src/
+
 │   ├── components/
+
 │   │   ├── Header.js
+
 │   │   ├── Footer.js
+
 │   │   ├── ...
+
 │   ├── styles/
+
 │   │   ├── App.css
+
 │   │   ├── ...
+
 │   ├── App.js
+
 │   ├── index.js
+
 │   └── ...
+
 ├── .gitignore
+
 ├── package.json
+
 └── README.md
+
 
 Contributing
 
