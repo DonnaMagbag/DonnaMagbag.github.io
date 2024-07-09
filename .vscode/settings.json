@@ -5,6 +5,7 @@
         "neumorphic",
         "noopener",
         "noreferrer",
+        "predeploy",
         "stylesopt"
     ]
 }
