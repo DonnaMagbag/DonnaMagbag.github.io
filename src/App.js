@@ -1,6 +1,6 @@
 import './styles/styles1.css';
 
-import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Navigate, Route, HashRouter as Router, Routes } from 'react-router-dom';
 
 import About from './components/About';
 import Contact from './components/Contact';
